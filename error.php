@@ -29,22 +29,22 @@ $_SESSION['restrictLogin']=0;
 					<form action="process.php" method="post" role="signin">
 	                    <div class="alert alert-warning fade in">
 						    <a href="#" class="close" data-dismiss="alert">&times;</a>
-						    <strong>Warning!</strong> There was a problem with your network connection.
+						    <strong>Warning!</strong> There was a problem with your credentials.
 						</div>
 						<div class="form-group has-error has-feedback">
-						  <label class="control-label" for="inputError2">Username with error</label>
+						  <label class="control-label" for="inputError2">Username</label>
 						  <input type="text" class="form-control"  name="txtUsername" id="txtUsername" aria-describedby="inputError2Status">
 						  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
 						  <span id="inputError2Status" class="sr-only">(error)</span>
 						</div>
 						<div class="form-group has-error has-feedback">
-						  <label class="control-label" for="inputError2">Input with error</label>
+						  <label class="control-label" for="inputError2">Password</label>
 						  <input type="text" class="form-control"  name="txtPassword" id="txtPassword" aria-describedby="inputError2Status">
 						  <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
 						  <span id="inputError2Status" class="sr-only">(error)</span>
 						</div>
 	                    <div class="form-group pull-left" style="margin-left:15px;">
-	                    	<button type="submit" name="btnLogin" id="btnLogin" class="btn btn-primary">Login</button>
+	                    	<button type="submit" name="btnLogin" id="btnLogin" class="btn btn-danger">Login</button>
 	                	</div>
 		            </form>
 				</div>

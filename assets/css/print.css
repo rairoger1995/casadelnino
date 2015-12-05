@@ -1,0 +1,29 @@
+.pagination li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+#example td{
+border-right:1px solid;
+text-align:center;
+}
+tfoot{
+border-right:none;
+}
+#sort{
+border:0px !important;
+}
+.span3{
+width:168px;
+float:left;
+font-size:8px !important;
+font-family:arial !important;
+}
+#print_right{
+float:right;
+margin-top:-40px;
+}
+h4{
+font-size:15px;
+font-family:arial !important;
+}

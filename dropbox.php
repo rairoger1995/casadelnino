@@ -1,34 +1,16 @@
 <?php require_once('Connections/conn.php');
 include('inc_security.php');
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-<title>File Manager</title>
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles/reset.css" />
-<link rel="stylesheet" type="text/css" href="scripts/jquery.filetree/jqueryFileTree.css" />
-<link rel="stylesheet" type="text/css" href="scripts/jquery.contextmenu/jquery.contextMenu-1.01.css" />
-<link rel="stylesheet" type="text/css" href="scripts/custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" />
-<style type="text/css">
-	#loading-wrap {
-		position:fixed;
-		height:100%;
-		width:100%;
-		overflow:hidden;
-		top:0;
-		left:0;
-		display:block;
-		background: white url(./images/wait30trans.gif) no-repeat center center;
-		z-index:999;
-	}
-</style>
 
-<!-- CSS dynamically added using 'config.options.theme' defined in config file -->
-</head>
+<!-- header -->
+<?php
+include_once ('assets/includes/header.php');
+?>
+
 <body>
+<!-- navigation -->
 <?php include("assets/includes/inc_navigation.php");?>
+
 	<div class="uploader">
 		<form id="uploader" method="post">
 			<h1></h1>
@@ -76,15 +58,20 @@ include('inc_security.php');
 			<li class="delete separator"><a href="#delete"></a></li>
 		</ul>
 	</div>
-<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-browser.js"></script>
-<script type="text/javascript" src="scripts/jquery.form-3.24.js"></script>
-<script type="text/javascript" src="scripts/jquery.splitter/jquery.splitter-1.5.1.js"></script>
-<script type="text/javascript" src="scripts/jquery.filetree/jqueryFileTree.js"></script>
-<script type="text/javascript" src="scripts/jquery.contextmenu/jquery.contextMenu-1.01.js"></script>
-<script type="text/javascript" src="scripts/jquery.impromptu-3.2.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.tablesorter-2.7.2.min.js"></script>
-<script type="text/javascript" src="scripts/filemanager.min.js"></script>
+	
+	<!-- script file for file upload dropfile -->
+	<script type="text/javascript" src="scripts/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-browser.js"></script>
+	<script type="text/javascript" src="scripts/jquery.form-3.24.js"></script>
+	<script type="text/javascript" src="scripts/jquery.splitter/jquery.splitter-1.5.1.js"></script>
+	<script type="text/javascript" src="scripts/jquery.filetree/jqueryFileTree.js"></script>
+	<script type="text/javascript" src="scripts/jquery.contextmenu/jquery.contextMenu-1.01.js"></script>
+	<script type="text/javascript" src="scripts/jquery.impromptu-3.2.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.tablesorter-2.7.2.min.js"></script>
+	<script type="text/javascript" src="scripts/filemanager.min.js"></script>
 
+
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.js"></script>    
 </body>
 </html>
